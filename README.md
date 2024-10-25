@@ -28,6 +28,7 @@ Python 3.x
 Biblioteca json (já inclusa no Python)
 
 4 - Como Executar
+
 Clone ou faça o download do repositório para sua máquina.
 
 Navegue até o diretório onde o código está salvo.
@@ -52,4 +53,5 @@ Salvar a lista: Digite 4 e forneça o nome do arquivo (ou um novo nome) para sal
 Carregar uma lista existente: Selecione uma lista pelo número correspondente ao arquivo JSON.
 
 5 - Observações
+
 Certifique-se de que os arquivos .json são mantidos no mesmo diretório do script para carregamento correto. O código considera o sistema operacional para comandos de limpeza de tela (cls para Windows e clear para Unix/Linux).
