@@ -1,57 +1,39 @@
-Gerenciador de Lista de Compras
+<h1>AppCompras</h1>
 
-Este é um aplicativo de terminal em Python para gerenciar listas de compras. O programa permite adicionar, remover e visualizar itens em uma lista de compras, além de salvar e carregar listas salvas em arquivos .json.
+<h2>Descrição</h2>
+<p>O <strong>AppCompras</strong> é um aplicativo desenvolvido para auxiliar no gerenciamento de listas de compras, permitindo o controle eficiente de produtos, preços e orçamentos.</p>
 
-1 - Funcionalidades
+<h2>Funcionalidades</h2>
+<ul>
+    <li><strong>Cadastro de Produtos</strong>: Adicione itens à sua lista de compras com nome, categoria, preço e quantidade.</li>
+    <li><strong>Cálculo Automático</strong>: O aplicativo calcula automaticamente o custo total com base nos itens adicionados.</li>
+    <li><strong>Organização por Categorias</strong>: Visualize produtos agrupados por categorias para facilitar a navegação.</li>
+    <li><strong>Histórico de Compras</strong>: Acompanhe compras anteriores e reutilize listas já criadas.</li>
+    <li><strong>Exportação de Dados</strong>: Salve ou compartilhe sua lista em formatos como CSV ou PDF.</li>
+</ul>
 
-Adicionar itens: Inclua um item e sua quantidade na lista de compras.
-Remover itens: Exclua um item específico da lista.
-Visualizar a lista: Veja todos os itens e suas quantidades na lista.
-Salvar e carregar listas: Salve uma lista de compras em um arquivo .json e carregue listas previamente salvas.
-Gerenciamento de arquivos: Crie uma nova lista ou carregue listas existentes de um diretório.
+<h2>Tecnologias Utilizadas</h2>
+<ul>
+    <li><strong>Python</strong>: Linguagem principal do backend.</li>
+    <li><strong>Flask/Django</strong>: Framework para desenvolvimento web (caso seja uma aplicação web).</li>
+    <li><strong>SQLite/MySQL</strong>: Banco de dados para armazenamento de informações (se aplicável).</li>
+    <li><strong>Streamlit/Kivy</strong>: Interface para exibição dos dados (caso seja um app desktop/mobile).</li>
+</ul>
 
-2 - Estrutura do Código
+<h2>Como Utilizar</h2>
+<ol>
+    <li><strong>Clone o repositório</strong>: <code>git clone https://github.com/MatheusTSS/AppCompras.git</code></li>
+    <li><strong>Instale as dependências</strong>: Execute <code>pip install -r requirements.txt</code>.</li>
+    <li><strong>Configure o banco de dados</strong>: Se necessário, rode as migrações para criar as tabelas.</li>
+    <li><strong>Inicie a aplicação</strong>: Dependendo da tecnologia utilizada, execute <code>python app.py</code> ou <code>streamlit run app.py</code>.</li>
+</ol>
 
-Funções principais
+<h2>Requisitos</h2>
+<ul>
+    <li>Python 3.x instalado.</li>
+    <li>Dependências instaladas via <code>pip install -r requirements.txt</code>.</li>
+</ul>
 
-adicionar_item(compras, item, quantidade): Adiciona um item com sua quantidade na lista de compras.
-remover_item(compras, item): Remove um item da lista, se ele existir.
-visualizar_compras(compras): Exibe todos os itens e quantidades.
-salvar_compras(compras, nome_arquivo): Salva a lista atual em um arquivo JSON.
-carregar_compras(nome_arquivo): Carrega uma lista de compras a partir de um arquivo JSON.
-gerenciar_compras(compras, nome_arquivo=None): Menu para adicionar, remover, visualizar e salvar a lista de compras.
-main(): Menu principal para criar ou carregar uma lista de compras.
-
-3 - Pré-requisitos
-
-Python 3.x
-Biblioteca json (já inclusa no Python)
-
-4 - Como Executar
-
-Clone ou faça o download do repositório para sua máquina.
-
-Navegue até o diretório onde o código está salvo.
-
-Execute o arquivo:
-
-Ao iniciar o programa, escolha uma das opções:
-Criar uma nova lista de compras: inicia uma lista vazia.
-Carregar uma lista existente: lista os arquivos JSON no diretório e permite carregar um deles.
-Sair: fecha o programa.
-
-Na interface de gerenciamento da lista, você pode:
-Adicionar um item: insere o nome e a quantidade.
-Remover um item: digita o nome do item para removê-lo.
-Visualizar a lista: exibe a lista completa.
-Salvar e sair: salva a lista no arquivo especificado.
-Sair sem salvar: encerra o gerenciamento sem salvar as mudanças.
-
-Exemplo de uso
-Adicionar um item: Digite 1 e insira o nome e quantidade do item.
-Salvar a lista: Digite 4 e forneça o nome do arquivo (ou um novo nome) para salvar.
-Carregar uma lista existente: Selecione uma lista pelo número correspondente ao arquivo JSON.
-
-5 - Observações
-
-Certifique-se de que os arquivos .json são mantidos no mesmo diretório do script para carregamento correto. O código considera o sistema operacional para comandos de limpeza de tela (cls para Windows e clear para Unix/Linux).
+<h2>Autor</h2>
+<p>Matheus Tadeu Souza Santos</p>
+<p>LinkedIn: <a href="http://linkedin.com/in/matheustss/" target="_blank">http://linkedin.com/in/matheustss/</a></p>
